@@ -12,7 +12,7 @@ while True:
         if continuar == 'N':
             break
 print(f'Foram escritos {len(lista)} números')
-print('Ela escrita ao contrário ficaria:')
+print('Ela escrita na order decrescente ficaria:')
 lista.sort(reverse=True)
 for c in lista:
     print(c, end=' ')
