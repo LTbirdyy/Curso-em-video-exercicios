@@ -1,5 +1,5 @@
 lista = []
-parentese = parentese_1 = parentese_2 = 0
+parentese_1 = parentese_2 = 0
 expressao = list(input('Escreva alguma expressão, exemplo (3+2), entre parentese:'))
 for c in expressao:
     print(c)
