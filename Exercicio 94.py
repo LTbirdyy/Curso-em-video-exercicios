@@ -25,11 +25,14 @@ while True:
             media = acumulador_idade/contador_pessoas
 
     # SALVANDO NA LISTA PESSOAS COM IDADE ACIMA DE MÉDIA
-    if dados['idade'] > media or contador_pessoas == 1 and dados['idade'] == media:
+    if dados['idade'] > media:
         lista_velhos.append(dados['nome'])
 
     # CONFIRMAÇÃO DE MAIS PESSOAS
     continuar = str(input('Deseja cadastrar mais pessoas[S/N]?')).upper().strip()[0]
+    # CASO DA PRIMEIRA PESSOA
+    if lista_dados[0]['idade'] > media and continuar == 'N':
+        lista_velhos.append(lista_dados[0]['nome'])
     if continuar == 'N':
         break
 
